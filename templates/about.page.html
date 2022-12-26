@@ -1,0 +1,264 @@
+{{template "base" . }}
+
+<!-- header -->
+{{define "header"}}
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-white absolute-top">
+        <div class="container">
+            <button
+                class="navbar-toggler order-2 order-md-1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse"
+                aria-controls="navbar-left navbar-right"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown active">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdown01"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Home</a
+                        >
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="home-onecolumn.html">One column</a>
+                            <a class="dropdown-item" href="home-twocolumn.html">Two column</a>
+                            <a class="dropdown-item" href="home-threecolumn.html">Three column</a>
+                            <a class="dropdown-item" href="home-fourcolumn.html">Four column</a>
+                            <a class="dropdown-item" href="home-featured.html">Featured posts</a>
+                            <a class="dropdown-item" href="home-fullwidth.html">Full width</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdown02"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Posts</a
+                        >
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                            <a class="dropdown-item" href="post-image.html">Image</a>
+                            <a class="dropdown-item" href="post-video.html">Video</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdown03"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Components</a
+                        >
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="doc-alerts.html">Alerts</a>
+                            <a class="dropdown-item" href="doc-buttons.html">Buttons</a>
+                            <a class="dropdown-item" href="doc-cards.html">Cards</a>
+                            <a class="dropdown-item" href="doc-carousel.html">Carousel</a>
+                            <a class="dropdown-item" href="doc-forms.html">Forms</a>
+                            <a class="dropdown-item" href="doc-icons.html">Icons</a>
+                            <a class="dropdown-item" href="doc-modals.html">Modals</a>
+                            <a class="dropdown-item" href="doc-offcanvas.html">Offcanvas</a>
+                            <a class="dropdown-item" href="doc-pagination.html">Pagination</a>
+                            <a class="dropdown-item" href="doc-tables.html">Tables</a>
+                            <a class="dropdown-item" href="doc-typography.html">Typography</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand mx-auto order-1 order-md-3" href="/">Home</a>
+
+            <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacts">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline" role="search">
+                    <input
+                        class="search js-search form-control form-control-rounded me-sm-2"
+                        type="text"
+                        title="Enter search query here.."
+                        placeholder="Search.."
+                        aria-label="Search"
+                    />
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+{{end}}
+
+<!-- main -->
+{{define "main"}}
+<main class="main pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <article class="card mb-4">
+                    <header class="card-header">
+                        <div class="card-meta">
+                            <a href="#"
+                                ><time class="timeago" datetime="2021-09-26 20:00" timeago-id="2"
+                                    >11 months ago</time
+                                ></a
+                            >
+                            in <a href="page-category.html">Journey</a>
+                        </div>
+                        <a href="post-image.html">
+                            <h4 class="card-title">How can we sing about love?</h4>
+                        </a>
+                    </header>
+                    <a href="post-image.html">
+                        <img class="card-img" src="https://milo.bootlab.io/img/articles/8.jpg" alt="" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                            amet adipiscing sem neque sed ipsum.
+                        </p>
+                    </div>
+                </article>
+                <!-- /.card -->
+
+                <article class="card mb-4">
+                    <header class="card-header">
+                        <div class="card-meta">
+                            <a href="#"
+                                ><time class="timeago" datetime="2021-09-03 20:00" timeago-id="3">1 year ago</time></a
+                            >
+                            in <a href="page-category.html">Lifestyle</a>
+                        </div>
+                        <a href="post-image.html">
+                            <h4 class="card-title">Oh, I guess they have the blues</h4>
+                        </a>
+                    </header>
+                    <a href="post-image.html">
+                        <img class="card-img" src="https://milo.bootlab.io/img/articles/22.jpg" alt="" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                            amet adipiscing sem neque sed ipsum.
+                        </p>
+                    </div>
+                </article>
+                <!-- /.card -->
+
+                <article class="card mb-4">
+                    <header class="card-header">
+                        <div class="card-meta">
+                            <a href="#"
+                                ><time class="timeago" datetime="2021-07-16 20:00" timeago-id="4">1 year ago</time></a
+                            >
+                            in <a href="page-category.html">Work</a>
+                        </div>
+                        <a href="post-image.html">
+                            <h4 class="card-title">How can we, how can we sing about ourselves?</h4>
+                        </a>
+                    </header>
+                    <a href="post-image.html">
+                        <img class="card-img" src="https://milo.bootlab.io/img/articles/19.jpg" alt="" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                            amet adipiscing sem neque sed ipsum.
+                        </p>
+                    </div>
+                </article>
+                <!-- /.card -->
+
+                <article class="card mb-4">
+                    <header class="card-header">
+                        <div class="card-meta">
+                            <a href="#"
+                                ><time class="timeago" datetime="2021-09-15 20:00" timeago-id="5">1 year ago</time></a
+                            >
+                            in <a href="page-category.html">Lifestyle</a>
+                        </div>
+                        <a href="post-image.html">
+                            <h4 class="card-title">The king is made of paper</h4>
+                        </a>
+                    </header>
+                    <a href="post-image.html">
+                        <img class="card-img" src="https://milo.bootlab.io/img/articles/3.jpg" alt="" />
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                            amet adipiscing sem neque sed ipsum.
+                        </p>
+                    </div>
+                </article>
+                <!-- /.card -->
+            </div>
+            <div class="col-md-3 ms-auto">
+                <aside class="sidebar">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">About</h4>
+                            <p class="card-text">
+                                Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+                                <a href="#">semper libero</a>, sit amet adipiscing sem neque sed ipsum.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </aside>
+
+                <aside class="sidebar sidebar-sticky">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Tags</h4>
+                            <a class="btn btn-light btn-sm mb-1" href="page-category.html">Journey</a>
+                            <a class="btn btn-light btn-sm mb-1" href="page-category.html">Work</a>
+                            <a class="btn btn-light btn-sm mb-1" href="page-category.html">Lifestype</a>
+                            <a class="btn btn-light btn-sm mb-1" href="page-category.html">Photography</a>
+                            <a class="btn btn-light btn-sm mb-1" href="page-category.html">Food &amp; Drinks</a>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Popular stories</h4>
+
+                            <a href="post-image.html" class="d-inline-block">
+                                <h4 class="h6">The blind man</h4>
+                                <img class="card-img" src="https://milo.bootlab.io/img/articles/2.jpg" alt="" />
+                            </a>
+                            <time class="timeago" datetime="2021-09-03 20:00" timeago-id="6">1 year ago</time>
+                            in Lifestyle
+
+                            <a href="post-image.html" class="d-inline-block mt-3">
+                                <h4 class="h6">Crying on the news</h4>
+                                <img class="card-img" src="https://milo.bootlab.io/img/articles/3.jpg" alt="" />
+                            </a>
+                            <time class="timeago" datetime="2021-07-16 20:00" timeago-id="7">1 year ago</time>
+                            in Work
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>
+{{end}}

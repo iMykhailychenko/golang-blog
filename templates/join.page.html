@@ -1,0 +1,44 @@
+{{template "base" . }}
+
+<!-- main -->
+{{define "main"}}
+
+<main class="form-signin d-flex flex-column text-center h-100 bg-light">
+    <a class="h4 d-block mt-5 text-dark" href="/">Go to Home Page</a>
+
+    <form autocomplete="off" class="auth-form m-auto d-block w-100 px-2">
+        <h1 class="h3 my-3 fw-normal">Please Sign In</h1>
+
+        <div class="form-floating">
+            <input required name="email" type="email" class="form-control" id="email" placeholder="name@example.com" />
+            <label for="email">Email address</label>
+        </div>
+
+        <div class="form-floating">
+            <input required name="firstName" type="text" class="form-control" id="firstName" placeholder="First name" />
+            <label for="firstName">First name</label>
+        </div>
+
+        <div class="form-floating">
+            <input required name="lastName" type="text" class="form-control" id="lastName" placeholder="Last name" />
+            <label for="lastName">Last name</label>
+        </div>
+
+        <div class="form-floating">
+            <input
+                required
+                name="password"
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+            />
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary mt-5" type="submit">Sign In</button>
+
+        <a class="btn btn-link d-block mt-4" href="/login">Go to Login page</a>
+    </form>
+</main>
+{{end}}

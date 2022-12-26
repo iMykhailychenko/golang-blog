@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 2;
+}
+
+.auth-form {
+    max-width: 400px;
+}
+
+.form-control,
+.form-control > * {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 300;
+}
+
+label {
+    font-weight: 300;
+}
